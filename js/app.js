@@ -13,4 +13,13 @@ const sliderMain = new Swiper('.slider_main', {
       spaceBetween: 60
     }
   }
-})
+});
+
+const sliderBg = new Swiper('.slider_bg', {
+  centeredSlides: true,
+  parallax: true,
+  spaceBetween: 60,
+  slidesPerView: 3.5
+});
+
+sliderMain.controller.control = sliderBg;
